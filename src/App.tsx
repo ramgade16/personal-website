@@ -1,11 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Navbar from './Navbar';
+import { Navbar } from './Navbar';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Experience from './pages/Experience';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
+import './App.css'
 
 
 

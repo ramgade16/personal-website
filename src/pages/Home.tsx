@@ -1,9 +1,33 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import './Home.css';
+import Typed from 'typed.js';
 
 export default function Home() {
+    useEffect(() => {
+        const typed = new Typed(".auto-type", {
+            strings: ["Student at the University of Michigan.", "Data Science Major.", "Sports Enthusiast.", "Model Rocket Builder.", "Tropical Traveller.", "Cook.",],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        });
+
+        return () => {
+            typed.destroy();
+        };
+    }, []);
+
+    // Add class to body tag
+    useEffect(() => {
+        document.body.classList.add('home-background');
+
+        return () => {
+            document.body.classList.remove('home-background');
+        };
+    }, []);
+
     return (
-        <div className="background-img">
-            <img src="src/images/IMG_4806.jpg" alt="Background" />
+        <div id='home' className="container">
+            <h1>I'm a <span className="auto-type">Programmer</span></h1>
         </div>
-    )
+    );
 }
