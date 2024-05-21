@@ -87,7 +87,7 @@ export default function Contact() {
                         <input type="email" id="email" placeholder='Enter your email' name='email' required value={formData.email} onChange={handleChange} />
                         <label htmlFor="message">Write your message here</label>
                         <textarea id="message" name="message" rows={8} placeholder='Enter your message' required value={formData.message} onChange={handleChange}></textarea>
-                        <button type='submit' className="contact-submit">Coming Soon ...</button>
+                        <button type='submit' className="contact-submit">Submit</button>
                     </form>
                 </div>
             </div>
