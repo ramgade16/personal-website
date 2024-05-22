@@ -26,8 +26,13 @@ export default function Home() {
     }, []);
 
     return (
-        <div id='home' className="container">
-            <h1>I'm a <span className="auto-type">Programmer</span></h1>
+        <div id="home" className="home-container">
+            <div className="container">
+                <h1>I'm a <span className="auto-type">Programmer</span></h1>
+            </div>
+            <div className="me-action">
+                <div className="me-resume">Resume</div>
+            </div>
         </div>
     );
 }

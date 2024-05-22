@@ -1,35 +1,23 @@
 nav {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.604);
     height: 70px;
     position: sticky;
     top: 0;
     width: 100vw;
-    vertical-align: middle;
     font-size: 18px;
     margin: auto;
     z-index: 1000;
+    vertical-align: middle;
 }
 
-
-nav .home {
-    margin: 1rem;
-    text-decoration: none;
-    color: white;
-    align-items: center;
+nav .menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
 }
-
-
-nav .home:hover {
-    margin: 1rem;
-    text-decoration: none;
-    color: white;
-    align-items: center;
-    color: white;
-}
-
 
 nav ul {
     display: flex;
@@ -51,6 +39,7 @@ nav ul li a {
     margin: 0 4rem;
     margin-top: 1rem;
     align-items: center;
+    justify-content: center;
     padding: 0 10px;
 }
 
@@ -95,6 +84,31 @@ nav .menu span {
     border-radius: 0.2rem;
 }
 
+.social-links {
+    display: flex;
+    align-items: center;
+    margin-right: 4rem;
+    color: white;
+}
+
+.social-links a {
+    color: white;
+    margin-right: 15px;
+    font-size: 30px;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+
+nav .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 4rem;
+}
 
 @media (max-width: 768px) {
     nav .menu {

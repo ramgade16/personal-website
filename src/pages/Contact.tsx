@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 import './Contact.css';
 
 export default function Contact() {
@@ -58,7 +59,7 @@ export default function Contact() {
         <div id='contact' className="contact-background">
             <div className="contact">
                 <div className="contact-title">
-                    <h1>Get In Touch</h1>
+                    <h1>Contact Me</h1>
                     <img src="" alt=""></img>
                 </div>
                 <div className="contact-section">
@@ -70,14 +71,19 @@ export default function Contact() {
                         <p>Please feel free to reach out regarding any internships, projects, research opportunities, or even just to connect and ask questions! My contact information is listed below.</p>
                         <div className="contact-details">
                             <div className="contact-detail">
-                                put mail here
+                                ramgade@umich.edu
                             </div>
                             <div className="contact-detail">
-                                put phone here
+                                256-334-1122
                             </div>
                             <div className="contact-detail">
-                                put location here
+                                AL, United States
                             </div>
+                        </div>
+                        <div className="social-links">
+                            <a href="https://www.linkedin.com/in/ramshreyas-gade/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+                            <a href="mailto:ramgade@umich.edu"><FaEnvelope /></a>
+                            <a href="https://github.com/your-github-id" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
                         </div>
                     </div>
                     <form onSubmit={onSubmit} className="contact-right">
