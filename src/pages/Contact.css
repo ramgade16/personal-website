@@ -8,9 +8,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* This should center it vertically */
     justify-content: center;
+    /* This should center it horizontally */
     gap: 70px;
-    margin: 0px 170px;
+    margin: auto;
+    /* Ensure it is centered horizontally on all screen sizes */
+    width: 100%;
+    /* Use 100% width for better responsiveness */
 }
 
 .contact-title {
@@ -23,6 +28,8 @@
     font-weight: 600;
     position: relative;
     display: inline-block;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-title h1::after {
@@ -41,6 +48,7 @@
 .contact-section {
     display: flex;
     gap: 150px;
+    flex-direction: row;
 
 }
 
@@ -138,4 +146,62 @@
 
 .social-links {
     align-items: left;
+}
+
+@media(max-width: 768px) {
+    .contact {
+        gap: 50px;
+        margin: 50px 70px;
+        align-items: center;
+    }
+
+    .profile-image img {
+        width: 100px;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-title h1 {
+        padding: 0;
+        font-size: 50px;
+        font-weight: 600;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 10%;
+    }
+
+    .contact-left p {
+        font-size: 20px;
+        padding-right: 50%;
+    }
+
+    .contact-right {
+        padding: 0px;
+    }
+
+    .contact-detail {
+        gap: 20px;
+        font-size: 20px;
+    }
+
+    .contact-right label {
+        font-size: 20px;
+    }
+
+    .contact-right input {
+        width: 75%;
+        font-size: 20px;
+    }
+
+    .contact-right textarea {
+        width: 95%;
+        font-size: 20px;
+    }
+
 }

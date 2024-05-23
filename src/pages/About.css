@@ -12,6 +12,7 @@
     justify-content: center;
     gap: 70px;
     margin: 0px 170px;
+    padding: 0 20px;
 }
 
 .about-title {
@@ -41,6 +42,7 @@
     display: flex;
     gap: 150px;
     padding-bottom: 40px;
+    flex-direction: row;
 }
 
 .about-left {
@@ -80,4 +82,45 @@
 .about-right img {
     width: 650px;
     height: auto;
+}
+
+@media (max-width: 768px) {
+
+    .about {
+        gap: 30px;
+    }
+
+    .about-title h1 {
+        font-size: 45px;
+        padding-top: 25px;
+    }
+
+    /* Adjust this pixel value based on your design needs */
+    .about-section {
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .about-right img {
+        width: 450px;
+        /* Make image responsive */
+        height: 450px;
+    }
+
+    .about-left {
+        padding-left: 65px;
+        padding-right: 65px;
+        gap: 20px;
+    }
+
+    .about-left p {
+        font-size: 20px;
+    }
+
+    .about-left,
+    .about-right {
+        align-items: center;
+        /* Center align the content for better aesthetics */
+    }
 }
