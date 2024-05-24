@@ -153,41 +153,41 @@
         gap: 50px;
         margin: 50px 70px;
         align-items: center;
+        padding-left: 6rem;
     }
 
-    .profile-image img {
-        width: 100px;
-        height: auto;
+    .contact-title {
         align-items: center;
-        justify-content: center;
+        padding-right: 15rem;
     }
 
     .contact-title h1 {
         padding: 0;
-        font-size: 50px;
+        font-size: 45px;
         font-weight: 600;
-        align-items: center;
-        justify-content: center;
+        padding-top: 50px;
     }
 
     .contact-section {
         flex-direction: column;
-        align-items: center;
-        padding-left: 10%;
+        gap: 75px;
     }
 
     .contact-left p {
         font-size: 20px;
-        padding-right: 50%;
+        padding-right: 225px;
     }
 
-    .contact-right {
-        padding: 0px;
+    .contact-details {
+        font-size: 20px;
     }
 
     .contact-detail {
         gap: 20px;
-        font-size: 20px;
+    }
+
+    .contact-right {
+        gap: 10px;
     }
 
     .contact-right label {
@@ -195,13 +195,12 @@
     }
 
     .contact-right input {
-        width: 75%;
+        width: 55%;
         font-size: 20px;
     }
 
     .contact-right textarea {
-        width: 95%;
+        width: 55%;
         font-size: 20px;
     }
-
 }

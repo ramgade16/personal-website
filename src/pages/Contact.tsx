@@ -83,7 +83,7 @@ export default function Contact() {
                         <div className="social-links">
                             <a href="https://www.linkedin.com/in/ramshreyas-gade/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
                             <a href="mailto:ramgade@umich.edu"><FaEnvelope /></a>
-                            <a href="https://github.com/your-github-id" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+                            <a href="https://github.com/ramgade16" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
                         </div>
                     </div>
                     <form onSubmit={onSubmit} className="contact-right">

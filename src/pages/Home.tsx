@@ -31,7 +31,12 @@ export default function Home() {
                 <h1>I'm a <span className="auto-type">Programmer</span></h1>
             </div>
             <div className="me-action">
-                <div className="me-resume">Resume</div>
+                <a href="https://drive.google.com/file/d/1KH5sUW_xuYoCiZ3OfMc32HBalhQu9QlW/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="me-resume-link">
+                    <div className="me-resume">Resume</div>
+                </a>
             </div>
         </div>
     );

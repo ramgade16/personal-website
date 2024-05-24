@@ -92,7 +92,7 @@
 
     .about-title h1 {
         font-size: 45px;
-        padding-top: 25px;
+        padding-top: 50px;
     }
 
     /* Adjust this pixel value based on your design needs */
@@ -103,14 +103,14 @@
     }
 
     .about-right img {
-        width: 450px;
+        width: 350px;
         /* Make image responsive */
-        height: 450px;
+        height: 350px;
     }
 
     .about-left {
-        padding-left: 65px;
-        padding-right: 65px;
+        margin-left: 6rem;
+        margin-right: 6rem;
         gap: 20px;
     }
 

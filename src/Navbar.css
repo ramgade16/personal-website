@@ -1,3 +1,10 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -11,6 +18,7 @@ nav {
     margin: auto;
     z-index: 1000;
     vertical-align: middle;
+    padding: 0;
 }
 
 nav .menu {
@@ -113,20 +121,25 @@ nav .profile-pic {
 @media (max-width: 768px) {
     nav .menu {
         display: flex;
+        margin-top: 0.45rem;
+        align-items: center;
     }
-
 
     nav {
         flex-direction: column;
-        align-items: start;
+        align-items: flex-start;
     }
 
 
     nav ul {
         display: none;
         flex-direction: column;
+        top: 100%;
         width: 100%;
+        margin-top: 11.7px;
         margin-bottom: 0.25rem;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.604);
     }
 
 
@@ -144,4 +157,37 @@ nav .profile-pic {
     nav ul li a {
         margin: 0.2rem 0.5rem;
     }
+
+    .home-link {
+        align-self: flex-start;
+    }
+
+
+    nav .nav-menu {
+        width: 100%;
+        /* Ensures the dropdown takes the full width of nav */
+        align-items: center;
+        /* Centers the items within the nav-menu */
+        justify-content: center;
+        /* Centers the dropdown menu horizontally */
+    }
+
+    .social-links {
+        display: none;
+        /* This line hides the social icons on smaller screens */
+    }
+
+    nav .profile-pic {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-left: 1.5rem;
+        margin-top: 0.5rem;
+    }
+
+    nav ul li a:after {
+        display: none;
+    }
+
 }
