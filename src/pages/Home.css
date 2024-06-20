@@ -10,7 +10,7 @@ body {
 }
 
 #home {
-    background-image: url('../images/IMG_4806.jpg');
+    background-image: url('src/images/IMG_4806.jpg');
     background-size: cover;
     background-position: center 60%;
     background-repeat: no-repeat;
