@@ -1,9 +1,7 @@
-import project1_img from '../images/Siemens-Personal_website.jpg'
-import project2_img from '../images/michigan_investment_group_cover.jpg'
-import project3_img from '../images/cantor_personal_website.png'
-import project4_img from '../assets/project_4.svg'
-import project5_img from '../assets/project_5.svg'
-import project6_img from '../assets/project_6.svg'
+import project1_img from '../images/Siemens-Personal_website.jpg';
+import project2_img from '../images/michigan_investment_group_cover.jpg';
+import project3_img from '../images/cantor_personal_website.png';
+import project4_img from '../images/Swivell_screenshot.png';
 
 const mywork_data = [
     {
@@ -26,6 +24,6 @@ const mywork_data = [
         w_name: "Web design",
         w_img: project4_img
     },
-]
+];
 
 export default mywork_data;
