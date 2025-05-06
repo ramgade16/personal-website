@@ -1,7 +1,7 @@
-import project1_img from '../images/Siemens-Personal_website.jpg';
-import project2_img from '../images/michigan_investment_group_cover.jpg';
-import project3_img from '../images/cantor_personal_website.png';
-import project4_img from '../images/Swivell_screenshot.png';
+import project1_img from '/images/Siemens-Personal_website.jpg';
+import project2_img from '/images/michigan_investment_group_cover.jpg';
+import project3_img from '/images/cantor_personal_website.png';
+import project4_img from '/images/Swivell_screenshot.png';
 
 const mywork_data = [
     {

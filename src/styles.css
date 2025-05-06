@@ -30,7 +30,13 @@ html {
     height: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    border: 0;
     margin: 0;
     padding: 0;
     position: relative;
 }
+
+html, body, #root, .App {
+    margin: 0;
+    padding: 0;
+  }

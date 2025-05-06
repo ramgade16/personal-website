@@ -1,0 +1,6 @@
+/* ---- Global resets, etc. ---- */
+
+/* Hero background — keep ONE correct rule */
+#home {
+    background: url('/images/IMG_4806.jpg') center/cover no-repeat;
+}
