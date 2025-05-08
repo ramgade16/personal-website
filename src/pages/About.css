@@ -6,25 +6,31 @@ about-background {
 }
 
 .about {
+    width: 100vw;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 70px;
-    margin: 0px 170px;
-    padding: 0 20px;
+    justify-content: flex-start;
+    gap: 2vw;
+    margin: 0;
+    padding: 0 5vw;
+    padding-top: 80px;
+    padding-bottom: 4vw;
 }
 
 .about-title {
     position: relative;
+    margin-bottom: 0.5rem;
 }
 
 .about-title h1 {
-    padding-top: 80px;
-    font-size: 70px;
+    font-size: clamp(2.2rem, 6vw, 3.2rem);
     font-weight: 600;
     position: relative;
     display: inline-block;
+    margin-bottom: 0.5rem;
+    padding-top: 0;
 }
 
 .about-title h1::after {
@@ -32,95 +38,112 @@ about-background {
     align-items: center;
     position: absolute;
     width: 110%;
-    height: 8px;
-    bottom: -4%;
+    height: 6px;
+    bottom: -10px;
     left: -5%;
     background: linear-gradient(to right, rgb(2, 189, 251), hotpink);
 }
 
 .about-section {
     display: flex;
-    gap: 150px;
-    padding-bottom: 40px;
+    gap: 8vw;
+    padding-bottom: 2vw;
     flex-direction: row;
+    width: 100%;
+    justify-content: center;
 }
 
 .about-left {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 2vw;
 }
 
 .about-left p {
     max-width: 550px;
     color: black;
-    font-size: 25px;
-    line-height: 35px;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
 }
 
 .about-details {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 2vw;
     color: black;
-    font-size: 22px;
+    font-size: 1.2rem;
 }
 
 .about-detail {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 1vw;
 }
 
 .about-right {
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 20px;
+    gap: 2vw;
 }
 
 .about-right img {
-    width: 650px;
+    width: 100%;
+    max-width: 650px;
     height: auto;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-@media (max-width: 768px) {
-
+@media (max-width: 900px) {
     .about {
-        gap: 30px;
+        gap: 1vw;
+        padding: 0 4vw;
+        padding-bottom: 2vw;
     }
-
     .about-title h1 {
-        font-size: 45px;
-        padding-top: 50px;
+        font-size: clamp(1.5rem, 5vw, 2.2rem);
+        padding-top: 1rem;
     }
-
-    /* Adjust this pixel value based on your design needs */
+    .about-title h1::after {
+        height: 5px;
+        bottom: -8px;
+    }
     .about-section {
         flex-direction: column;
-        gap: 50px;
+        gap: 2vw;
         text-align: center;
-    }
-
-    .about-right img {
-        width: 350px;
-        /* Make image responsive */
-        height: 350px;
-    }
-
-    .about-left {
-        margin-left: 6rem;
-        margin-right: 6rem;
-        gap: 20px;
-    }
-
-    .about-left p {
-        font-size: 20px;
-    }
-
-    .about-left,
-    .about-right {
         align-items: center;
-        /* Center align the content for better aesthetics */
+    }
+    .about-right img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+    .about-left {
+        gap: 1vw;
+    }
+    .about-left p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .about-details {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .about {
+        padding: 0 2vw;
+        gap: 0.5vw;
+        padding-bottom: 1vw;
+    }
+    .about-title h1 {
+        font-size: 1.2rem;
+        padding-top: 0.5rem;
+    }
+    .about-title h1::after {
+        height: 4px;
+        bottom: -6px;
     }
 }

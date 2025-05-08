@@ -1,26 +1,32 @@
 .projects {
-    min-width: 100vw;
+    width: 100vw;
     min-height: 100vh;
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 70px;
-    margin: 0px 170px;
+    justify-content: flex-start;
+    gap: 2vw;
+    margin: 0;
     background-color: black;
+    padding: 0 5vw;
+    padding-top: 80px;
+    padding-bottom: 4vw;
 }
 
 .projects-title {
     position: relative;
+    margin-bottom: 0.5rem;
 }
 
 .projects-title h1 {
-    font-size: 70px;
-    padding-top: 80px;
+    color: white;
+    font-size: clamp(2.2rem, 6vw, 3.2rem);
     font-weight: 600;
     position: relative;
     display: inline-block;
-    color: white;
+    margin-bottom: 0.5rem;
+    padding-top: 0;
 }
 
 .projects-title h1::after {
@@ -28,8 +34,8 @@
     align-items: center;
     position: absolute;
     width: 110%;
-    height: 8px;
-    bottom: -12%;
+    height: 6px;
+    bottom: -10px;
     left: -5%;
     background: linear-gradient(to right, rgb(2, 189, 251), hotpink);
 }
@@ -37,16 +43,24 @@
 .projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    padding-bottom: 40px;
+    gap: 1.5vw;
+    padding-bottom: 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-items: center;
 }
 
 .projects-container img {
     box-sizing: border-box;
-    width: 600px;
-    height: 300px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    aspect-ratio: 2/1;
     transition: 0.3s;
     cursor: pointer;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .projects-container img:hover {
@@ -56,26 +70,47 @@
     transition: 0.3s;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 900px) {
     .projects {
-        margin: 0px 20px;
-        min-width: 52vw;
-        min-height: 52vh;
-        gap: 30px;
+        padding: 0 6vw;
+        gap: 1vw;
+        padding-bottom: 2vw;
     }
-
     .projects-title h1 {
-        font-size: 45px;
-        padding-top: 40px;
+        font-size: clamp(1.5rem, 5vw, 2.2rem);
+        padding-top: 1rem;
     }
-
+    .projects-title h1::after {
+        height: 5px;
+        bottom: -8px;
+    }
     .projects-container {
-        gap: 10px;
         grid-template-columns: 1fr;
+        gap: 2vw;
+        max-width: 98vw;
     }
-
     .projects-container img {
-        width: 300px;
-        height: 150px;
+        max-width: 100%;
+        aspect-ratio: 2/1;
+    }
+}
+
+@media (max-width: 600px) {
+    .projects {
+        padding: 0 4vw;
+        gap: 0.5vw;
+        padding-bottom: 1vw;
+    }
+    .projects-title h1 {
+        font-size: 1.2rem;
+        padding-top: 0.5rem;
+    }
+    .projects-title h1::after {
+        height: 4px;
+        bottom: -6px;
+    }
+    .projects-container {
+        max-width: 100vw;
+        gap: 2vw;
     }
 }

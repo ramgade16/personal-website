@@ -11,13 +11,12 @@ nav {
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.604);
     height: 70px;
-    position: sticky;
+    position: fixed;
     top: 0;
-    padding-top: 0;
+    left: 0;
     width: 100vw;
     font-size: 18px;
-    margin: auto;
-    margin-top: 0;
+    margin: 0;
     z-index: 1000;
     vertical-align: middle;
     padding: 0;
@@ -121,17 +120,21 @@ nav .profile-pic {
 }
 
 @media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        z-index: 1000;
+    }
+
     nav .menu {
         display: flex;
         margin-top: 0.45rem;
         align-items: center;
     }
-
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
 
     nav ul {
         display: none;

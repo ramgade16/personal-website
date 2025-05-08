@@ -3,3 +3,11 @@
     height: 100%;
     width: 100%;
 }
+
+/* Removed .main-content padding-top. Handle navbar offset in each section except homepage. */
+
+@media (max-width: 768px) {
+    .main-content {
+        padding-top: 60px;
+    }
+}
